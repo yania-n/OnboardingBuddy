@@ -12,8 +12,9 @@ class OnboardingPlanGeneratorAgent:
     by combining organization structure, software access matrices, and role curricula.
     """
     def __init__(self):
-        """Initializes the Onboarding Plan Generator Agent."""
+        """Initializes the Onboarding Plan Generator."""
         pass
+
 
     def _parse_role_tools_from_kb(self, role: str) -> List[Dict[str, str]]:
         """

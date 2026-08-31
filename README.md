@@ -29,12 +29,12 @@
                  │                                  │                                 │
                  └─────────────────┬────────────────┘                                 │
                                    ▼                                                  │
-                 ┌───────────────────────────────────┐                                │
-                 │  ONBOARDING PLAN GENERATOR AGENT  │                                │
-                 │  - Standard 6-Phase Framework     │                                │
-                 │  - Tool Access Checklist (SLA/App)│                                │
-                 │  - Phased Roadmap (D1/W1/M1/M3)   │                                │
-                 └─────────────────┬─────────────────┘                                │
+                  ┌───────────────────────────────────┐                                │
+                  │     ONBOARDING PLAN GENERATOR     │                                │
+                  │  - Standard 6-Phase Framework     │                                │
+                  │  - Tool Access Checklist (SLA/App)│                                │
+                  │  - Phased Roadmap (D1/W1/M1/M3)   │                                │
+                  └─────────────────┬─────────────────┘                                │
                                    │                                                  │
                                    ▼                                                  ▼
  ┌────────────────────────────────────────────────────────────────────────────────────────────────────┐
@@ -64,7 +64,8 @@
   - **Org Expert Agent** ([`backend/app/agents/org_expert.py`](file:///c:/Users/naday/Desktop/Antigravity/onboarding_buddy/backend/app/agents/org_expert.py)): AI Agent that scans enterprise handbooks in GCS, cataloging BUs, Departments, Teams, and generating org briefs.
   - **Learning Expert Agent** ([`backend/app/agents/learning_expert.py`](file:///c:/Users/naday/Desktop/Antigravity/onboarding_buddy/backend/app/agents/learning_expert.py)): AI Agent that synthesizes 30-60-90 Day role curricula and manages markdown plan caching.
   - **Grounded Q&A Chatbot Agent** ([`backend/app/agents/qa_chatbot.py`](file:///c:/Users/naday/Desktop/Antigravity/onboarding_buddy/backend/app/agents/qa_chatbot.py)): AI Agent providing grounded policy answers with strict citations and manager escalation fallbacks.
-  - **Onboarding Plan Generator Engine** ([`backend/app/agents/plan_generator.py`](file:///c:/Users/naday/Desktop/Antigravity/onboarding_buddy/backend/app/agents/plan_generator.py)): Deterministic rule-based synthesizer that compiles 6-phase onboarding roadmaps, mapping tool access matrices, approvals, and SLAs.
+  - **Onboarding Plan Generator** ([`backend/app/agents/plan_generator.py`](file:///c:/Users/naday/Desktop/Antigravity/onboarding_buddy/backend/app/agents/plan_generator.py)): Deterministic rule-based synthesizer that compiles 6-phase onboarding roadmaps, mapping tool access matrices, approvals, and SLAs.
+
 
 
 ---
