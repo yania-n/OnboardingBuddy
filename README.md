@@ -1,13 +1,13 @@
 # OnboardingBuddy: AI Personalized Onboarding Platform
 
-**OnboardingBuddy** is an enterprise-grade onboarding platform that automates the creation of personalized, role-based onboarding roadmaps for new hires. It leverages custom LLM agents and a grounded RAG (Retrieval-Augmented Generation) engine to index company handbook files (`kb_docs/`) and generate tailored task checklists and learning plans.
+**OnboardingBuddy** is an enterprise-grade onboarding platform that automates the creation of personalized, role-based onboarding roadmaps for new hires. It leverages custom LLM agents and a grounded RAG (Retrieval-Augmented Generation) engine to index company handbook files stored directly in **Google Cloud Storage (GCS)** and generate tailored task checklists and learning plans.
 
 ## System Architecture
 
 ```
                        ┌──────────────────────────────────────────────────────────┐
-                       │                     KNOWLEDGE BASE                       │
-                       │  kb_docs/ (Handbooks, RACI, Tools Matrix, Role Guides)  │
+                       │               GOOGLE CLOUD STORAGE (GCS)                 │
+                       │  gs://<bucket>/ (Handbooks, RACI, Tools Matrix, Guides)  │
                        └────────────────────────────┬─────────────────────────────┘
                                                     │
                                                     ▼

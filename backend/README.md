@@ -1,6 +1,6 @@
 # OnboardingBuddy Backend
 
-This is the backend API and agent system for OnboardingBuddy, built using **FastAPI**, **SQLite**, and **Google GenAI**. It generates personalized, phased onboarding tasks checklist for new joiners based on markdown documents in the company knowledge base (`kb_docs/`).
+This is the backend API and agent system for OnboardingBuddy, built using **FastAPI**, **SQLite**, and **Google GenAI**. It generates personalized, phased onboarding tasks checklists for new joiners based on markdown documents in the company knowledge base stored in **Google Cloud Storage (GCS)**.
 
 ## Architecture & Modules
 
@@ -19,11 +19,12 @@ The backend is structured into modular packages under `app/`:
    - `database.py`: SQL/SQLite table creation and CRUD operations.
    - `models.py`: Pydantic Request/Response validation schemas.
 
-3. **`app/agents`**: Specialized AI agent wrappers built using **Google GenAI SDK (`google-genai`)** & **Vertex AI (Gemini 3.5+ / `gemini-3.5-flash`)**:
+3. **`app/agents`**: Specialized AI agent wrappers built using **Google GenAI SDK (`google-genai`)** & **Vertex AI (Gemini 3.6 Flash / `gemini-3.6-flash`)**:
    - `org_expert.py`: Scans handbook files to map BUs, Departments, and Teams.
    - `learning_expert.py`: Creates 30-60-90 day learning plans.
    - `plan_generator.py`: Assembles personalized roadmaps matching the company framework.
    - `qa_chatbot.py`: Handles grounded employee queries and records missing details.
+
 
 
 
