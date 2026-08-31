@@ -1,0 +1,11 @@
+# OnboardingBuddy Backend Python Dependencies
+fastapi>=0.115.0
+uvicorn>=0.30.0
+pydantic>=2.10.0
+google-genai>=0.2.0
+google-cloud-storage>=2.10.0
+python-multipart>=0.0.26
+python-dotenv>=1.0.0
+pytest>=9.0.0
+pytest-asyncio>=0.23.0
+pytest-cov>=5.0.0

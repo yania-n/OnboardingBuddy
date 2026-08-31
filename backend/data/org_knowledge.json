@@ -1,0 +1,373 @@
+{
+  "company_name": "CleanTech / Nexora Clean Energy Ecosystem",
+  "mission": "Accelerate planet-scale decarbonization by engineering fully integrated clean energy ecosystems across generation, storage, and mobility.",
+  "c_suite": [
+    {
+      "role": "Chief Executive Officer (CEO)",
+      "focus": "Vision, Capital Allocation, Investor Relations, Enterprise Growth"
+    },
+    {
+      "role": "Chief Technology Officer (CTO)",
+      "focus": "Platform Architecture, Cross-BU Primitives, Edge Computing, R&D"
+    },
+    {
+      "role": "Chief Operating Officer (COO)",
+      "focus": "Gigafactory Operations, Supply Chain, EHS, Manufacturing Execution"
+    },
+    {
+      "role": "Chief Commercial Officer (CCO)",
+      "focus": "Go-To-Market (GTM), Enterprise Sales, Marketing, Customer Success"
+    }
+  ],
+  "business_units": {
+    "Electric Mobility": {
+      "code": "BU-1",
+      "executive_lead": "EVP, Electric Mobility",
+      "focus": "High-performance commercial & consumer EV platforms, BMS, motor powertrain controls, telemetry.",
+      "departments": {
+        "Powertrain & Hardware Engineering": [
+          "PCB layout",
+          "Thermal Management",
+          "thermal management",
+          "Inverter hardware",
+          "Battery Packs",
+          "PCB Layout",
+          "high-voltage battery packs",
+          "Inverter HW"
+        ],
+        "Vehicle Embedded Software": [
+          "motor control algorithms",
+          "MISRA C Compliance",
+          "MISRA C compliance",
+          "CAN bus integration",
+          "CAN Bus",
+          "RTOS Firmware",
+          "Motor Control Algorithms",
+          "Low-level RTOS firmware"
+        ],
+        "Vehicle Quality & Safety": [
+          "HIL Testing",
+          "ISO 26262 functional safety",
+          "Crash Validation",
+          "Hardware-in-the-loop (HIL) testing",
+          "crash testing",
+          "ISO 26262 Functional Safety"
+        ]
+      }
+    },
+    "Solar Energy Systems": {
+      "code": "BU-2",
+      "executive_lead": "EVP, Solar Energy",
+      "focus": "Commercial, industrial, and utility-grade solar PV generation, smart inverters, grid-tie delivery.",
+      "departments": {
+        "Solar Project Management & Delivery": [
+          "Site Deployment",
+          "AHJ permitting",
+          "construction milestones",
+          "EPC contractor coordination",
+          "Milestones",
+          "EPC Coordination",
+          "AHJ Permitting",
+          "site deployment"
+        ],
+        "Photovoltaic Engineering": [
+          "Module Design",
+          "String Inverter Architecture",
+          "High-efficiency module design",
+          "grid interconnection modeling",
+          "Interconnection Modeling",
+          "string inverter architecture"
+        ],
+        "Field Operations & Commissioning": [
+          "Utility Handover",
+          "High-voltage site safety",
+          "utility interconnect testing",
+          "mechanical completion",
+          "Site High-Voltage Safety",
+          "Mechanical Completion"
+        ]
+      }
+    },
+    "Energy Storage Systems": {
+      "code": "BU-3",
+      "executive_lead": "EVP, Energy Storage",
+      "focus": "Utility-scale grid battery energy storage (BESS), microgrid storage, distributed energy resources.",
+      "departments": {
+        "BESS Architecture & Battery Engineering": [
+          "liquid cooling",
+          "Liquid Cooling",
+          "UL 9540 Fire Safety",
+          "Megawatt-scale pack enclosures",
+          "UL 9540 fire safety",
+          "Megawatt Enclosures"
+        ],
+        "Grid Integration & Telemetry": [
+          "frequency regulation algorithms",
+          "Modbus/DNP3 protocols",
+          "SCADA Integration",
+          "Frequency Regulation",
+          "SCADA integration",
+          "Modbus/DNP3 Protocols"
+        ],
+        "Battery Analytics & MLOps": [
+          "predictive maintenance",
+          "State-of-Charge (SoC) prediction",
+          "Predictive Maintenance",
+          "cell degradation models",
+          "State-of-Charge (SoC) Models",
+          "Cell Degradation"
+        ]
+      }
+    },
+    "Central Platforms & Corporate Operations": {
+      "code": "BU-Central",
+      "executive_lead": "CTO / COO / CCO",
+      "focus": "Enterprise shared services, cloud infrastructure, talent acquisition, GTM, legal.",
+      "departments": {
+        "Cross-BU Platform Engineering": [
+          "edge telemetry data pipelines",
+          "Security",
+          "Cloud Data Pipelines",
+          "cloud infrastructure",
+          "Shared API gateways",
+          "API Gateways",
+          "enterprise security",
+          "Edge Telemetry"
+        ],
+        "Global Talent Acquisition & HR": [
+          "Early Careers & Graduate Program",
+          "Early Careers & Graduate Rotational Program",
+          "Technical recruiting",
+          "HRBPs",
+          "Technical Recruiting"
+        ],
+        "Global Commercial Operations": [
+          "Marketing Analytics",
+          "PMM",
+          "Product Marketing (PMM)",
+          "Customer Success",
+          "Enterprise Sales (AEs)",
+          "Solutions Engineering (SE)"
+        ],
+        "Legal & Data Governance": [
+          "Data Privacy (GDPR/CCPA)",
+          "IP Protection",
+          "Ethics Compliance"
+        ],
+        "Legal, Compliance & Data Governance": [
+          "Intellectual property",
+          "data privacy",
+          "ethics compliance",
+          "contract redlines"
+        ]
+      }
+    }
+  },
+  "all_departments": [
+    "Powertrain & Hardware Engineering",
+    "Cross-BU Platform Engineering",
+    "Photovoltaic Engineering",
+    "Solar Project Management & Delivery",
+    "Global Talent Acquisition & HR",
+    "Legal & Data Governance",
+    "Battery Analytics & MLOps",
+    "BESS Architecture & Battery Engineering",
+    "Vehicle Embedded Software",
+    "Legal, Compliance & Data Governance",
+    "Global Commercial Operations",
+    "Field Operations & Commissioning",
+    "Grid Integration & Telemetry",
+    "Vehicle Quality & Safety"
+  ],
+  "cross_bu_synergies": [
+    {
+      "title": "Solar-to-Storage Interfacing",
+      "description": "Solar PV generation directly charges utility-scale BESS for peak-shaving and zero-carbon grid dispatch."
+    },
+    {
+      "title": "Vehicle-to-Grid (V2G) Integration",
+      "description": "Electric Mobility fleet batteries provide bi-directional power back into microgrids during peak demand."
+    },
+    {
+      "title": "Unified Platform Telemetry",
+      "description": "Common edge computing and MLOps platforms monitor real-time health across EV batteries, solar arrays, and grid storage."
+    }
+  ],
+  "executive_raci": [
+    {
+      "initiative": "New Platform Architecture (Cross-BU)",
+      "accountable": "CEO",
+      "responsible": "CTO",
+      "consulted": "EVP Mobility, EVP Solar, EVP Storage, COO, CCO",
+      "informed": ""
+    },
+    {
+      "initiative": "Gigafactory Supply Chain Sourcing",
+      "accountable": "CEO",
+      "responsible": "COO",
+      "consulted": "EVP Mobility, EVP Solar, EVP Storage",
+      "informed": "CTO, CCO"
+    },
+    {
+      "initiative": "Global GTM Expansion Strategy",
+      "accountable": "CEO",
+      "responsible": "CCO",
+      "consulted": "COO",
+      "informed": "EVPs, CTO"
+    },
+    {
+      "initiative": "Grid V2G Monetization Program",
+      "accountable": "CEO",
+      "responsible": "EVP Mobility, EVP Solar, EVP Storage",
+      "consulted": "CTO, COO, CCO",
+      "informed": ""
+    },
+    {
+      "initiative": "Hardware Safety Compliance (UL/ISO)",
+      "accountable": "CEO",
+      "responsible": "EVP Mobility, EVP Solar, EVP Storage, COO",
+      "consulted": "CTO",
+      "informed": "CCO"
+    }
+  ],
+  "roles": {
+    "account executive": {
+      "title": "Account Executive (AE)",
+      "department": "Global Commercial Operations",
+      "business_unit": "Central Commercial / Cross-BU",
+      "reports_to": "Regional Sales Director / Global VP, Enterprise Sales",
+      "objective": "Drive net-new annual contract value (ACV) and total contract value (TCV) across enterprise, municipal, and utility accounts by selling integrated solution packages."
+    },
+    "marketing analyst": {
+      "title": "Marketing Analyst",
+      "department": "Global Commercial Operations",
+      "business_unit": "Central Commercial / Cross-BU",
+      "reports_to": "Marketing Analytics Lead / Global VP, Marketing & PMM",
+      "objective": "Measure, analyze, and optimize full-funnel marketing performance, lead generation efficiency, CAC/LTV, and ROI across global campaigns."
+    },
+    "product owner": {
+      "title": "Product Owner (PO)",
+      "department": "Vehicle Software / Energy Systems Product Management",
+      "business_unit": "Electric Mobility / Platform Engineering",
+      "reports_to": "Product Lead / Staff Product Manager / VP of Product",
+      "objective": "Drive product backlog refinement, user story definition, feature prioritization, and sprint execution for edge computing and telemetry platforms."
+    },
+    "tech recruiter": {
+      "title": "Tech Recruiter",
+      "department": "Global Talent Acquisition & HR",
+      "business_unit": "Central Operations",
+      "reports_to": "Lead Tech Recruiter / Director of Global Talent Acquisition",
+      "objective": "Source, attract, evaluate, and hire top-tier technical talent across Hardware, Embedded Systems, Firmware, Software, and Power Electronics."
+    },
+    "project manager - solar": {
+      "title": "Project Manager \u2013 Solar Energy Systems",
+      "department": "Solar Project Management & Delivery",
+      "business_unit": "Solar Energy Systems",
+      "reports_to": "Senior Program Manager / Director of Solar Project Management",
+      "objective": "Lead end-to-end execution, EPC partner coordination, site deployment, grid interconnection, and budget management for commercial & utility solar PV projects."
+    },
+    "graduate trainee": {
+      "title": "Graduate Trainee / Apprentice",
+      "department": "Global Early Careers Program",
+      "business_unit": "Rotational Across BUs",
+      "reports_to": "Early Careers Program Manager & Assigned Business Unit Mentors",
+      "objective": "Build foundational technical and operational capabilities through structured multi-rotational placements across Electric Mobility, Solar Energy, and Energy Storage."
+    },
+    "senior embedded firmware engineer": {
+      "title": "Senior Embedded Firmware Engineer",
+      "department": "Vehicle Embedded Software",
+      "business_unit": "Electric Mobility",
+      "reports_to": "Director of Hardware Engineering / Lead Firmware Architect",
+      "objective": "Direct ownership of low-level software modules operating on bare-metal and RTOS microcontrollers, motor control, and BMS logic."
+    },
+    "principal mlops engineer": {
+      "title": "Principal MLOps Engineer",
+      "department": "Battery Analytics & MLOps",
+      "business_unit": "Energy Storage Systems",
+      "reports_to": "Director of Data & Analytics / CTO",
+      "objective": "Technical leadership for enterprise-wide ML pipelines, battery analytics models, and predictive maintenance fleets."
+    },
+    "evp_electric_mobility": {
+      "title": "EVP, Electric Mobility",
+      "department": null,
+      "business_unit": "Electric Mobility",
+      "reports_to": "Chief Executive Officer (CEO)",
+      "objective": "Full P&L responsibility for Electric Mobility BU, driving operational budget execution exceeding $1B+, multi-region manufacturing operations, and global headcount management; achieve quarterly EBIT and revenue targets; define 5-year product roadmaps and strategic capital allocation for R&D; direct cross-functional alignment between BU Engineering, Operations, and Global Commercial teams."
+    },
+    "evp_solar_energy": {
+      "title": "EVP, Solar Energy",
+      "department": null,
+      "business_unit": "Solar Energy Systems",
+      "reports_to": "Chief Executive Officer (CEO)",
+      "objective": "Full P&L responsibility for Solar Energy BU, driving operational budget execution exceeding $1B+, multi-region manufacturing operations, and global headcount management; achieve quarterly EBIT and revenue targets; define 5-year product roadmaps and strategic capital allocation for R&D; direct cross-functional alignment between BU Engineering, Operations, and Global Commercial teams."
+    },
+    "evp_energy_storage": {
+      "title": "EVP, Energy Storage",
+      "department": null,
+      "business_unit": "Energy Storage Systems",
+      "reports_to": "Chief Executive Officer (CEO)",
+      "objective": "Full P&L responsibility for Energy Storage BU, driving operational budget execution exceeding $1B+, multi-region manufacturing operations, and global headcount management; achieve quarterly EBIT and revenue targets; define 5-year product roadmaps and strategic capital allocation for R&D; direct cross-functional alignment between BU Engineering, Operations, and Global Commercial teams."
+    },
+    "director_of_hardware_engineering": {
+      "title": "Director of Hardware Engineering",
+      "department": "Powertrain & Hardware Engineering",
+      "business_unit": "Electric Mobility",
+      "reports_to": "EVP, Electric Mobility",
+      "objective": "Direct leadership over multi-disciplinary hardware teams containing 30\u201380 engineers; on-time delivery of hardware design milestones from concept to Design Validation Test (DVT); ensure full compliance with relevant safety standards (ISO 26262, UL 9540); manage engineering budget, prototyping expenses, and lab infrastructure."
+    },
+    "staff_product_manager_platform": {
+      "title": "Staff Product Manager (Platform)",
+      "department": "Cross-BU Platform Engineering",
+      "business_unit": "Central Platforms & Corporate Operations",
+      "reports_to": "Chief Technology Officer (CTO)",
+      "objective": "Functional ownership over core cross-BU platform software, telemetry APIs, and edge computing architectures; synthesize market requirements into detailed engineering epics and user stories; prioritize feature backlogs balancing enterprise platform stability with new BU-specific features; lead cross-functional alignment between engineering, legal, security, and commercial strategy."
+    },
+    "principal_mlops_engineer": {
+      "title": "Principal MLOps Engineer",
+      "department": "Battery Analytics & MLOps",
+      "business_unit": "Energy Storage Systems",
+      "reports_to": "EVP, Energy Storage",
+      "objective": "Technical leadership for enterprise-wide ML pipelines, battery analytics models, and predictive maintenance fleets; design, deploy, and maintain scalable infrastructure for training and inferencing ML models at the edge and in the cloud; establish CI/CD pipelines for continuous model retraining based on live vehicle/storage telemetry; drive data governance, model monitoring, and latency minimization across battery health analytics platforms."
+    },
+    "senior_embedded_firmware_engineer": {
+      "title": "Senior Embedded Firmware Engineer",
+      "department": "Vehicle Embedded Software",
+      "business_unit": "Electric Mobility",
+      "reports_to": "EVP, Electric Mobility",
+      "objective": "Direct ownership of low-level software modules operating on custom bare-metal and RTOS microcontrollers across energy systems; write clean, deterministic C/C++ code for motor control, BMS logic, or solar inverter microcontrollers; implement standard communication protocols (CAN, Modbus, Ethernet/IP) and hardware drivers; perform unit testing, hardware-in-the-loop (HIL) testing, and code reviews."
+    }
+  },
+  "file_hashes": {
+    "01_ORG_STRUCTURE.md": "07a627733a445b03514561dc7584b690",
+    "02_COMPANY_HANDBOOK.md": "2687e5b0dcf656709af25657446fe5db",
+    "03_ROLES_RESPONSIBILITIES.md": "198715c231bcf634abd09f9e4dd6e93c",
+    "04_ROLE_BASED_LEARNING.md": "f55acb52255e4de1d177f0c7a24997c3",
+    "05_GO_TO_MARKET_STRUCTURE.md": "9eedd3fa3dd187b9ccd35ddd4ff97c09",
+    "06_COMMERCIAL_ROLES_LEARNING.md": "21630c0852f92cbf782c773efe6a9c78",
+    "07_GLOBAL_ONBOARDING_FRAMEWORK.md": "af8f34733cb59c515220cd646a6cd05a",
+    "08_PHASE_3_DEPARTMENTAL_CURRICULUM.md": "3a9eb4ce0d6349410563de3aa0807396",
+    "09A_ONBOARDING_ACCOUNT_EXECUTIVE.md": "1018e27d1ad6ddeec23ff15a5ce1c12f",
+    "09B_ONBOARDING_MARKETING_ANALYST.md": "4b6e2f3f05221b082cadb93383092bc5",
+    "09C_ONBOARDING_PRODUCT_OWNER.md": "0669c623b3e398037f02ca16b4a7b569",
+    "09D_ONBOARDING_TECH_RECRUITER.md": "9ebf09ac025232ea9c7c038e3aa67186",
+    "09E_ONBOARDING_PROJECT_MANAGER_SOLAR.md": "e3ab9d9f97fa473e63beec4828466c00",
+    "09F_ONBOARDING_GRADUATE_TRAINEE.md": "67d109848910d4b1844ddc5e7ef02d50",
+    "10_ROLE_TOOLS_ACCESS_MATRIX.md": "d4c2c15823b07cd229e9049bf2c04816",
+    "11_POLICY_LIBRARY.md": "81be03c5e77d30c745cbac82c4002a1d",
+    "12_CULTURE_VALUES_PLAYBOOK.md": "74042d4b7344d656222bb324cfe61dad",
+    "13_REGIONAL_EMPLOYEMENT_ADDENDA.md": "1dc38a4674d5f319da7a973b6fd5f427",
+    "14_ERG_Directory.md": "0cffbef1cad72deaf6fb460f923c888c",
+    "15_Benefits_Enrolment_Walkthrough.md": "84cb49d5a0a3dbaeb62b7500cd5667ef",
+    "16_CompanyWide_FAQ.md": "9b5e311ab85aac4f26e89b03539038db",
+    "17_Payroll_Expenses_HowTo.md": "49d3a3c84200a5c50ddc85782abc313a",
+    "18_Office_Guides.md": "5a694a6aad9d4388a68c7a8a42a726e6",
+    "19_Onboarding_Buddy_Programme.md": "6c3d1e2403ebbfd5294f301d04afcec3",
+    "20_Meeting_Templates.md": "363d0e700b493870cd06bc340ef38410",
+    "21_Performance_Review_Cycle.md": "75304d4b37d5a736ebf96370dfff7b46",
+    "22_example_CrossDept_Dependency_Map.md": "fde98436073209e07ad2ba36aab63c3d"
+  },
+  "last_scanned_at": "2026-08-30T21:19:10.554877",
+  "changes_detected": [
+    "Initial organization knowledge scan completed."
+  ]
+}

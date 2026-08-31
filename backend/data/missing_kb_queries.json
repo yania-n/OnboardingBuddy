@@ -1,0 +1,245 @@
+[
+  {
+    "id": "b271d8ec-bec9-4917-ae6b-c64271fe3d67",
+    "user_id": "test-user-123",
+    "user_name": "John Doe",
+    "user_role": "Embedded Firmware Engineer",
+    "query": "What is the policy on taking personal pets to the testing facility?",
+    "context_bu": "Electric Mobility",
+    "timestamp": "2026-08-30T14:38:27.454833",
+    "status": "pending"
+  },
+  {
+    "id": "b38db066-2e03-4a3c-8e3e-a43ae5867ebb",
+    "user_id": "test-user-123",
+    "user_name": "John Doe",
+    "user_role": "Embedded Firmware Engineer",
+    "query": "What is the policy on taking personal pets to the testing facility?",
+    "context_bu": "Electric Mobility",
+    "timestamp": "2026-08-30T14:38:38.309804",
+    "status": "pending"
+  },
+  {
+    "id": "eecc0178-c576-4947-96a3-e1b18840340e",
+    "user_id": "760a2096-253e-4d3a-bc79-a61be2ddbda7",
+    "user_name": "Dr. Claire Sterling",
+    "user_role": "Principal Battery Analytics Engineer",
+    "query": "Can I bring my pet iguana to the battery testing cleanroom?",
+    "context_bu": "Energy Storage Systems",
+    "timestamp": "2026-08-30T14:46:14.716954",
+    "status": "resolved",
+    "resolution_notes": "Added cleanroom pet restrictions to 02_COMPANY_HANDBOOK.md"
+  },
+  {
+    "id": "73ad11aa-af7f-4b63-97af-72977d2244c1",
+    "user_id": "test-user-123",
+    "user_name": "John Doe",
+    "user_role": "Embedded Firmware Engineer",
+    "query": "What is the policy on taking personal pets to the testing facility?",
+    "context_bu": "Electric Mobility",
+    "timestamp": "2026-08-30T14:46:18.548751",
+    "status": "pending"
+  },
+  {
+    "id": "3778fa2b-1690-4a75-8fbf-b0d321903f91",
+    "user_id": "test-user-123",
+    "user_name": "John Doe",
+    "user_role": "Embedded Firmware Engineer",
+    "query": "What is the policy on taking personal pets to the testing facility?",
+    "context_bu": "Electric Mobility",
+    "timestamp": "2026-08-30T14:53:32.298841",
+    "status": "pending"
+  },
+  {
+    "id": "6f86d7fb-c770-435a-9626-44e9075f3f53",
+    "user_id": "317c067c-fb1e-4f6a-b80c-75e10c5b482a",
+    "user_name": "Elena Rostova",
+    "user_role": "Graduate Trainee",
+    "query": "Hi, how do I start?",
+    "context_bu": "Rotational Across BUs",
+    "timestamp": "2026-08-30T15:00:05.253464",
+    "status": "pending"
+  },
+  {
+    "id": "518f1801-b0a1-4354-a9df-6ae53648e6db",
+    "user_id": "317c067c-fb1e-4f6a-b80c-75e10c5b482a",
+    "user_name": "Elena Rostova",
+    "user_role": "Graduate Trainee",
+    "query": "what should be the 1st thing I should do?",
+    "context_bu": "Rotational Across BUs",
+    "timestamp": "2026-08-30T15:00:24.216140",
+    "status": "pending"
+  },
+  {
+    "id": "05bd16ff-2e56-4a62-8cca-806caf953b08",
+    "user_id": "89529f7f-9cd9-416f-9dfd-33c3810f2c4e",
+    "user_name": "Alex Rivera",
+    "user_role": "Marketing Analyst",
+    "query": "can you explain in simple english?",
+    "context_bu": "Central Commercial / Cross-BU",
+    "timestamp": "2026-08-30T15:04:18.639445",
+    "status": "pending"
+  },
+  {
+    "id": "e78f69f7-b060-43d0-9f25-79cf7e8d0fb2",
+    "user_id": "test-user-123",
+    "user_name": "John Doe",
+    "user_role": "Embedded Firmware Engineer",
+    "query": "What is the policy on taking personal pets to the testing facility?",
+    "context_bu": "Electric Mobility",
+    "timestamp": "2026-08-30T17:54:30.298305",
+    "status": "pending"
+  },
+  {
+    "id": "a74b5b03-0934-4b43-9c5a-e0deb3d1dfef",
+    "user_id": "test-user-123",
+    "user_name": "John Doe",
+    "user_role": "Embedded Firmware Engineer",
+    "query": "What is the policy on taking personal pets to the testing facility?",
+    "context_bu": "Electric Mobility",
+    "timestamp": "2026-08-30T17:55:35.719508",
+    "status": "pending"
+  },
+  {
+    "id": "0747caf0-cc65-44b3-ab1d-2a9573ff2920",
+    "user_id": "test-user-123",
+    "user_name": "John Doe",
+    "user_role": "Embedded Firmware Engineer",
+    "query": "What is the policy on taking personal pets to the testing facility?",
+    "context_bu": "Electric Mobility",
+    "timestamp": "2026-08-30T17:56:18.065893",
+    "status": "pending"
+  },
+  {
+    "id": "d383d6d8-c700-4a71-8350-1c1af5c77c89",
+    "user_id": "03428282-9f2c-45dc-98c3-a04569548eac",
+    "user_name": "Dr. Claire Sterling",
+    "user_role": "Principal Battery Analytics Engineer",
+    "query": "Can I bring my pet iguana to the battery testing cleanroom?",
+    "context_bu": "Energy Storage Systems",
+    "timestamp": "2026-08-30T18:00:10.924890",
+    "status": "resolved",
+    "resolution_notes": "Added cleanroom pet restrictions to 02_COMPANY_HANDBOOK.md"
+  },
+  {
+    "id": "2fbd9df3-a7dd-42dc-b815-c983fe56dfb7",
+    "user_id": "test-user-123",
+    "user_name": "John Doe",
+    "user_role": "Embedded Firmware Engineer",
+    "query": "What is the policy on taking personal pets to the testing facility?",
+    "context_bu": "Electric Mobility",
+    "timestamp": "2026-08-30T18:01:32.782942",
+    "status": "pending"
+  },
+  {
+    "id": "3446846b-5450-4b56-8dd4-3b31d28f2b08",
+    "user_id": "test-user-123",
+    "user_name": "John Doe",
+    "user_role": "Embedded Firmware Engineer",
+    "query": "What is the policy on taking personal pets to the testing facility?",
+    "context_bu": "Electric Mobility",
+    "timestamp": "2026-08-30T18:27:21.958741",
+    "status": "pending"
+  },
+  {
+    "id": "c443f5c6-2f46-4862-a964-20247ad23b31",
+    "user_id": "test-user-123",
+    "user_name": "John Doe",
+    "user_role": "Embedded Firmware Engineer",
+    "query": "What is the policy on taking personal pets to the testing facility?",
+    "context_bu": "Electric Mobility",
+    "timestamp": "2026-08-30T18:36:42.239463",
+    "status": "pending"
+  },
+  {
+    "id": "8daa1e89-6e90-4660-b2d0-22b3c31d1dfa",
+    "user_id": "96404d98-fbd4-4573-a778-0e2680478f38",
+    "user_name": "Dr. Claire Sterling",
+    "user_role": "Principal Battery Analytics Engineer",
+    "query": "Can I bring my pet iguana to the battery testing cleanroom?",
+    "context_bu": "Energy Storage Systems",
+    "timestamp": "2026-08-30T18:37:43.333299",
+    "status": "resolved",
+    "resolution_notes": "Added cleanroom pet restrictions to 02_COMPANY_HANDBOOK.md"
+  },
+  {
+    "id": "403d8b9c-82e6-4cc8-8957-d7c918ede14d",
+    "user_id": "test-user-123",
+    "user_name": "John Doe",
+    "user_role": "Embedded Firmware Engineer",
+    "query": "What is the policy on taking personal pets to the testing facility?",
+    "context_bu": "Electric Mobility",
+    "timestamp": "2026-08-30T18:47:57.622524",
+    "status": "pending"
+  },
+  {
+    "id": "19822c18-e97a-4f3a-82f3-b9ad6bb5c4bd",
+    "user_id": "test-user-123",
+    "user_name": "John Doe",
+    "user_role": "Embedded Firmware Engineer",
+    "query": "What is the policy on taking personal pets to the testing facility?",
+    "context_bu": "Electric Mobility",
+    "timestamp": "2026-08-30T19:02:00.229619",
+    "status": "pending"
+  },
+  {
+    "id": "3500c57b-dd98-4683-b1e4-87093cbd5d18",
+    "user_id": "test-user-123",
+    "user_name": "John Doe",
+    "user_role": "Embedded Firmware Engineer",
+    "query": "What is the policy on taking personal pets to the testing facility?",
+    "context_bu": "Electric Mobility",
+    "timestamp": "2026-08-30T19:10:49.059224",
+    "status": "pending"
+  },
+  {
+    "id": "2d2af232-d55f-4a40-a430-331c11202d03",
+    "user_id": "test-user-123",
+    "user_name": "John Doe",
+    "user_role": "Embedded Firmware Engineer",
+    "query": "What is the policy on taking personal pets to the testing facility?",
+    "context_bu": "Electric Mobility",
+    "timestamp": "2026-08-30T19:25:43.494706",
+    "status": "pending"
+  },
+  {
+    "id": "604d07de-61a1-4e78-b9a4-509d84cc4508",
+    "user_id": "test-user-123",
+    "user_name": "John Doe",
+    "user_role": "Embedded Firmware Engineer",
+    "query": "What is the policy on taking personal pets to the testing facility?",
+    "context_bu": "Electric Mobility",
+    "timestamp": "2026-08-30T19:39:50.613797",
+    "status": "pending"
+  },
+  {
+    "id": "15448dd5-e97a-4560-8a42-837d32623e50",
+    "user_id": "test-user-123",
+    "user_name": "John Doe",
+    "user_role": "Embedded Firmware Engineer",
+    "query": "What is the policy on taking personal pets to the testing facility?",
+    "context_bu": "Electric Mobility",
+    "timestamp": "2026-08-30T19:51:21.493620",
+    "status": "pending"
+  },
+  {
+    "id": "8ae9ecc5-b916-4c70-a5bb-a4a80b7c7432",
+    "user_id": "test-user-123",
+    "user_name": "John Doe",
+    "user_role": "Embedded Firmware Engineer",
+    "query": "What is the policy on taking personal pets to the testing facility?",
+    "context_bu": "Electric Mobility",
+    "timestamp": "2026-08-30T20:06:19.186245",
+    "status": "pending"
+  },
+  {
+    "id": "57485517-79e3-4993-b43a-66f4a10de6a9",
+    "user_id": "test-user-123",
+    "user_name": "John Doe",
+    "user_role": "Embedded Firmware Engineer",
+    "query": "What is the policy on taking personal pets to the testing facility?",
+    "context_bu": "Electric Mobility",
+    "timestamp": "2026-08-30T21:14:54.638943",
+    "status": "pending"
+  }
+]
