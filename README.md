@@ -57,15 +57,17 @@
  └────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-### Module Descriptions
-- **Backend Service**: Built on **FastAPI** to expose REST APIs for joiner creation, onboarding plan adjustments, chat interactions, and management logs.
-- **Frontend App**: Built on **React** with **Vite** and **TailwindCSS**, rendering user-friendly dashboards for managers and clear milestone guides for new hires.
-- **Org Expert Agent**: Evaluates company documentation to catalog Business Units, Departments, Teams, and roles.
-- **Learning Expert Agent**: Outlines customizable role curriculum files (30-60-90 Day) for different departments.
-- **Plan Generator Agent**: Reviews access parameters (e.g. tools matrix) and maps them to SLAs and required approvals.
-- **Grounded Q&A Chatbot**: A secure RAG chat buddy that references policy documents with precise citations and falls back to manager escalation if the information is missing.
+### Agent Framework & Technology Stack
+- **AI Agent Framework**: **Google GenAI SDK (`google-genai`)** powered by **Vertex AI** and **Google Gemini (2.0 / 1.5)** models.
+- **Retrieval Engine (RAG)**: Custom **Hybrid BM25 & Semantic Search Engine** with metadata-boosted ranking (Role, Business Unit, Department, and Software Matrix filters) and Google Cloud Storage (GCS) fallback.
+- **Multi-Agent Orchestration**:
+  - **Org Expert Agent** ([`backend/app/agents/org_expert.py`](file:///c:/Users/naday/Desktop/Antigravity/onboarding_buddy/backend/app/agents/org_expert.py)): Scans enterprise handbooks, computes MD5 hashes, cataloging BUs, Departments, Teams, and generating org briefs.
+  - **Learning Expert Agent** ([`backend/app/agents/learning_expert.py`](file:///c:/Users/naday/Desktop/Antigravity/onboarding_buddy/backend/app/agents/learning_expert.py)): Synthesizes 30-60-90 Day role curricula and manages markdown plan caching.
+  - **Plan Generator Agent** ([`backend/app/agents/plan_generator.py`](file:///c:/Users/naday/Desktop/Antigravity/onboarding_buddy/backend/app/agents/plan_generator.py)): Assembles standardized 6-phase onboarding roadmaps, mapping tool access matrix approvals and SLAs.
+  - **Grounded Q&A Chatbot Agent** ([`backend/app/agents/qa_chatbot.py`](file:///c:/Users/naday/Desktop/Antigravity/onboarding_buddy/backend/app/agents/qa_chatbot.py)): Grounded RAG conversational engine providing strict citations and manager escalation fallbacks.
 
 ---
+
 
 ## Directory Structure
 
