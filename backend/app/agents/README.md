@@ -12,8 +12,8 @@ This module contains the LLM-powered specialized agents that drive the Onboardin
   - Dynamically drafts a personalized 30-60-90 Day learning plan for a specific role.
   - Caches generated markdown files and reuses them if a similar role is onboarded.
 - **`plan_generator.py`**:
-  - Automatically compiles standard company milestones and role-specific tasks (e.g. tools setup, system guides).
-  - Assesses tool access provisioning paths and SLAs.
+  - Deterministic rule-based synthesizer engine (non-LLM) that compiles company milestones, tool matrices, SLAs, and outputs from specialist agents into structured 6-phase checklists.
+
 - **`qa_chatbot.py`**:
   - Standard conversation agent utilizing RAG semantic queries to retrieve answers.
   - Restricts responses to company documentation and escalates to the manager when answers are missing.
