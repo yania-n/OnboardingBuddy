@@ -5,7 +5,8 @@ from ..db.models import ChatMessageResponse, Citation
 from ..db.database import save_missing_feedback
 from ..rag.indexer import rag_engine
 from .org_expert import org_expert_agent
-from ..config import GCP_PROJECT_ID
+from ..config import GCP_PROJECT_ID, GEMINI_MODEL
+
 
 class QAChatbotAgent:
     """
@@ -263,9 +264,10 @@ Knowledge Base Context:
 {combined_context}
 """
                 response = self.genai_client.models.generate_content(
-                    model="gemini-2.5-flash",
+                    model=GEMINI_MODEL,
                     contents=prompt
                 )
+
                 if response and response.text:
                     return response.text.strip()
             except Exception as e:

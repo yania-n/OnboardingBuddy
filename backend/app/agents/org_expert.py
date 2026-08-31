@@ -4,8 +4,9 @@ import os
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, Any, List, Optional
-from ..config import ORG_KNOWLEDGE_FILE, KB_DOCS_DIR, GCP_PROJECT_ID
+from ..config import ORG_KNOWLEDGE_FILE, KB_DOCS_DIR, GCP_PROJECT_ID, GEMINI_MODEL
 from ..rag.indexer import rag_engine
+
 
 class OrganizationExpertAgent:
     def __init__(self, knowledge_file: Path = ORG_KNOWLEDGE_FILE):
@@ -192,9 +193,10 @@ Organizational Documents:
 {combined_kb}
 """
                 response = self.genai_client.models.generate_content(
-                    model="gemini-2.5-flash",
+                    model=GEMINI_MODEL,
                     contents=prompt
                 )
+
                 if response and response.text:
                     clean_text = response.text.strip()
                     if clean_text.startswith("```json"):
@@ -491,22 +493,14 @@ Retrieved Documents relevant to this role/team:
 {rag_context}
 """
                 response = self.genai_client.models.generate_content(
-                    model="gemini-2.5-flash",
+                    model=GEMINI_MODEL,
                     contents=prompt
                 )
                 if response and response.text:
                     return response.text.strip()
             except Exception as e:
                 print(f"GenAI generation fallback in OrgExpertAgent: {e}")
-                try:
-                    response = self.genai_client.models.generate_content(
-                        model="gemini-1.5-flash",
-                        contents=prompt
-                    )
-                    if response and response.text:
-                        return response.text.strip()
-                except Exception as e2:
-                    print(f"GenAI 1.5-flash also failed: {e2}")
+
 
         # Local deterministic fallback generator that complies perfectly with word count, style, and headings.
         return self._local_deterministic_brief(name, role, team, department, business_unit, seniority, role_info)
@@ -601,9 +595,10 @@ Query: {query}
 Answer concisely (under 100 words). If you cannot answer it, output exactly "None".
 """
                 response = self.genai_client.models.generate_content(
-                    model="gemini-2.5-flash",
+                    model=GEMINI_MODEL,
                     contents=prompt
                 )
+
                 if response and response.text:
                     res = response.text.strip()
                     if res != "None" and len(res) > 5:

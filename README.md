@@ -58,13 +58,14 @@
 ```
 
 ### Agent Framework & Technology Stack
-- **AI Agent Framework**: **Google GenAI SDK (`google-genai`)** powered by **Vertex AI** and **Google Gemini (2.0 / 1.5)** models.
+- **AI Agent Framework**: **Google GenAI SDK (`google-genai`)** powered by **Vertex AI** and **Google Gemini 3.5 or above (`gemini-3.5-flash`)** models.
 - **Retrieval Engine (RAG)**: Custom **Hybrid BM25 & Semantic Search Engine** with metadata-boosted ranking (Role, Business Unit, Department, and Software Matrix filters) and Google Cloud Storage (GCS) fallback.
 - **Multi-Agent Orchestration**:
   - **Org Expert Agent** ([`backend/app/agents/org_expert.py`](file:///c:/Users/naday/Desktop/Antigravity/onboarding_buddy/backend/app/agents/org_expert.py)): Scans enterprise handbooks, computes MD5 hashes, cataloging BUs, Departments, Teams, and generating org briefs.
   - **Learning Expert Agent** ([`backend/app/agents/learning_expert.py`](file:///c:/Users/naday/Desktop/Antigravity/onboarding_buddy/backend/app/agents/learning_expert.py)): Synthesizes 30-60-90 Day role curricula and manages markdown plan caching.
   - **Plan Generator Agent** ([`backend/app/agents/plan_generator.py`](file:///c:/Users/naday/Desktop/Antigravity/onboarding_buddy/backend/app/agents/plan_generator.py)): Assembles standardized 6-phase onboarding roadmaps, mapping tool access matrix approvals and SLAs.
   - **Grounded Q&A Chatbot Agent** ([`backend/app/agents/qa_chatbot.py`](file:///c:/Users/naday/Desktop/Antigravity/onboarding_buddy/backend/app/agents/qa_chatbot.py)): Grounded RAG conversational engine providing strict citations and manager escalation fallbacks.
+
 
 ---
 

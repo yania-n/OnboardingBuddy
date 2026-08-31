@@ -3,8 +3,9 @@ import os
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, Any, List, Optional
-from ..config import LEARNING_PLANS_DIR, GCP_PROJECT_ID
+from ..config import LEARNING_PLANS_DIR, GCP_PROJECT_ID, GEMINI_MODEL
 from ..rag.indexer import rag_engine
+
 
 def slugify(text: str) -> str:
     """
@@ -203,9 +204,10 @@ Knowledge Base Context:
 {combined_context}
 """
                 response = self.genai_client.models.generate_content(
-                    model="gemini-2.5-flash",
+                    model=GEMINI_MODEL,
                     contents=prompt
                 )
+
                 if response and response.text:
                     return response.text.strip()
             except Exception as e:
