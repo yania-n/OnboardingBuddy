@@ -281,15 +281,93 @@ When employees ask the Q&A Chatbot a question that isn't answered in the Knowled
 
 ---
 
-## 🧪 Automated Verification & Testing
+## 🧪 Reproducible Testing & Quality Assurance
 
-To run the automated test suite locally:
+OnboardingBuddy includes a comprehensive, reproducible testing framework covering unit tests, integration tests, and end-to-end verification across both local development and cloud environments.
+
+### 📊 Test Matrix Overview
+
+| Test Suite | File Location | Purpose | Target Environment | Execution Command |
+| :--- | :--- | :--- | :--- | :--- |
+| **Backend Unit Tests** | [`backend/tests/test_backend.py`](file:///c:/Users/naday/Desktop/Antigravity/onboarding_buddy/backend/tests/test_backend.py) | Verifies RAG retriever, multi-agent logic, plan synthesis, and REST API routes | Local Python environment | `python -m pytest backend/tests -v` |
+| **End-to-End Integration** | [`e2e_verification.py`](file:///c:/Users/naday/Desktop/Antigravity/onboarding_buddy/e2e_verification.py) | Simulates full joiner onboarding, plan generation, task toggling, and grounded Q&A chat | Local Server or Live Cloud Run | `python e2e_verification.py` |
+| **Production Health Check** | `/health` Endpoint | Liveness probe verifying server availability and SQLite DB connectivity | Cloud Run / Production Docker | `curl https://onboarding-buddy-517395366109.europe-southwest1.run.app/health` |
+
+---
+
+### 1. Running Unit Tests (`pytest`)
+
+Execute the backend unit test suite to verify core logic:
+
 ```bash
-# Run pytest backend unit tests
-cd backend && python -m pytest
+# Ensure virtual environment and dependencies are active
+pip install -r requirements.txt
 
-# Run End-to-End integration test (against local or Cloud Run)
+# Run pytest with verbose output
+python -m pytest backend/tests -v
+```
+
+#### What is Tested in `test_backend.py`:
+* **RAG Retriever Precision**: Verifies hybrid BM25 and semantic search score thresholds.
+* **Org Expert Agent**: Validates org chart hierarchy building, RACI mapping, and brief generation.
+* **Learning Expert Agent**: Ensures 30-60-90 day curriculum generation and markdown file caching.
+* **Onboarding Plan Generator**: Tests software access matrix parsing, SLA calculation, and 6-phase roadmap assembly.
+* **Grounded Q&A Chatbot**: Confirms strict citation extraction and polite manager escalation for missing queries.
+* **Feedback Logging**: Tests recording of unanswerable employee queries to `missing_kb_queries.json`.
+* **REST API Endpoints**: Tests FastAPI handlers (`/api/joiners`, `/api/plans`, `/api/tasks`, `/api/chat`, `/api/feedback`).
+
+---
+
+### 2. Running End-to-End (E2E) Integration Tests (`e2e_verification.py`)
+
+The E2E verification script executes a complete 7-phase integration test simulating real user interactions:
+
+#### Running Against Local Server:
+```bash
+# Set target URL to local server
+# Windows (PowerShell)
+$env:BASE_URL="http://127.0.0.1:8000"
+
+# Linux / macOS
+export BASE_URL="http://127.0.0.1:8000"
+
+# Run E2E verification
 python e2e_verification.py
 ```
 
+#### Running Against Live Cloud Run Deployment:
+```bash
+# Set target URL to production Cloud Run service
+# Windows (PowerShell)
+$env:BASE_URL="https://onboarding-buddy-517395366109.europe-southwest1.run.app"
 
+# Linux / macOS
+export BASE_URL="https://onboarding-buddy-517395366109.europe-southwest1.run.app"
+
+# Run E2E verification
+python e2e_verification.py
+```
+
+#### 7-Step Verification Sequence Executed by `e2e_verification.py`:
+1. **Health Probe Check**: Validates `GET /health` returns `{"status":"healthy"}` (`200 OK`).
+2. **Joiners Retrieval**: Fetches active hires via `GET /api/joiners` and verifies progress calculations.
+3. **Plan Preview Generation**: Sends new hire profile to `POST /api/plans/preview` and verifies task synthesis across all 6 phases.
+4. **Joiner Creation & Plan Publishing**: Creates user profile via `POST /api/joiners` and publishes the plan.
+5. **Interactive Task Toggling**: Simulates checking off onboarding items via `PATCH /api/tasks/{id}/toggle`.
+6. **Grounded Q&A Conversation**: Sends grounded question to `POST /api/chat` and asserts presence of document citations.
+7. **Manager Escalation Logging**: Sends out-of-domain query to `POST /api/chat`, asserts fallback prompt, and verifies feedback entry.
+
+---
+
+### 3. Reproducible Test Results Verification
+
+When tests execute successfully, you will see output confirming 100% test pass rate:
+
+```text
+============================= test session starts =============================
+collected 8 items
+
+backend/tests/test_backend.py ........                                [100%]
+
+============================== 8 passed in 12.4s ==============================
+```
